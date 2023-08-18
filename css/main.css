@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #18191C;
+}
+
+.box {
+    display: flex;
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 200px;
+    background-color: transparent;
+}
+
+.child-wrapper {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+}
+
+.child-wrapper1 {
+    justify-content: flex-end;
+}
+
+.child {
+    border-radius: 25px;
+}
+
+.child1 {
+    width: 50px;
+    height: 50px;
+    background-color: #F498AD;
+    animation-name: child1animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+@keyframes child1animation {
+    from {
+        width: 50px;
+        height: 50px;
+        background-color: #F498AD;
+    }
+    50% {
+        width: 50px;
+        height: 200px;
+        background-color: #7F6EDB;
+    }
+    to {
+        width: 200px;
+        height: 200px;
+        background-color: #2E9AFF;
+    }
+}
+
+.child2 {
+    width: 200px;
+    height: 200px;
+    background-color: #2E9AFF;
+} 
